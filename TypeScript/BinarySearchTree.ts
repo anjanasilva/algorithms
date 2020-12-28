@@ -13,6 +13,11 @@ class BinarySearchTree {
       this.root = null;
   }
   
+ /**
+ * Takes a numeric value and add to current tree.
+ * @param value Numeric value 
+ * @returns Return boolean true or false
+ */
   public addToTree(value: number): boolean {
     // Create a new node
     const newNode = new TreeNode(value);
@@ -54,6 +59,10 @@ class BinarySearchTree {
     }
   }
   
+ /**
+ * Sort the tree using breadth-first approach 
+ * @returns Returns the sorted array
+ */	
   public breadthFirstSearch() : number[] {
       // Create a queue to keep track of nodes that needs to be visited
       let toBeVisitedQueue = new Array<TreeNode>();
@@ -84,7 +93,11 @@ class BinarySearchTree {
       
       return visitedArray;      
   }
-  
+
+ /**
+ * Sort the tree using deapth-first approach 
+ * @returns Returns the sorted array
+ */		
   public depthFirstPreOrder() : number[] {
     // Stack to keep track of the nodes we visited
     let visitedStack = new Array<TreeNode<number>>();
