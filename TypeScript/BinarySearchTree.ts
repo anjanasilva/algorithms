@@ -133,11 +133,11 @@ class BinarySearchTree {
 }
 
 class TreeNode {
-		private value: number;
+    private value: number;
     private left: TreeNode;
     private right: TreeNode;
     
-   public getValue(): number {
+    public getValue(): number {
       return this.value;
     }
     
